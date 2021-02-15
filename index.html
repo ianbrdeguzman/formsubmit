@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="height=device-height width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <title>Form Submit</title>
+</head>
+<body>
+  <div class="contact-me">
+    <h2>Send me a message</h2>
+    <p>This contact form uses third party app Formspree to handle form submissions until i learn Express.js and Node.js</p>
+    <form action="https://formspree.io/f/mgepbvyv" method="POST">
+      <label>
+        <input id="name" name="name" type="text" placeholder="NAME" required>
+      </label>
+      <label>
+        <input type="email" name="email" placeholder="EMAIL ADDRESS" required>
+      </label>
+      <label>
+        <input id="subject" name="subject" type="text" maxlength="30" placeholder="SUBJECT" required>
+      </label>
+      <label>
+        <textarea name="message" placeholder="MESSAGE" required></textarea>
+      </label>
+      <button type="submit">SEND</button>
+    </form>
+    <div class="status"></div>
+  </div>
+</body>
+</html>
